@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>list</title>
+    <title>List of student</title>
 </head>
 <body>
     <table>
-        <tr><td>Имя</td><td>Отчество</td><td>Фамилия</td><td>Месяц рождения</td></tr>
+        <tr><td>First Name</td><td>Middle name</td><td>Last Name</td><td>Date of birth</td></tr>
         {% for student in students %}
             <tr><td>{{ student.first_name }}</td> <td>{{ student.middle_name}}</td>
                 <td>{{ student.last_name }}</td><td>{{ student.date_of_birth.year }}.{{ student.date_of_birth.month }}</td></tr>
